@@ -1,0 +1,138 @@
+.hero-header {
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+
+  &__bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+    &-mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    &-img {
+      background-image: url( #{$IMG_PATH}jpg/hero-header-background.jpg );
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+
+      @media ( min-resolution: 2dppx ) {
+        background-image: url( #{$IMG_PATH}jpg/hero-header-background@2x.jpg );
+      }
+    
+      @include mq( $TC_BREAKPOINT ) {
+        background-image: url( #{$IMG_PATH}jpg/hero-header-background-tc.jpg );
+    
+        @media ( min-resolution: 2dppx ) {
+          background-image: url( #{$IMG_PATH}jpg/hero-header-background-tc@2x.jpg );
+        }
+      }
+    
+      @include mq( $PC_BREAKPOINT ) {
+        background-image: url( #{$IMG_PATH}jpg/hero-header-background-pc.jpg );
+    
+        @media ( min-resolution: 2dppx ) {
+          background-image: url( #{$IMG_PATH}jpg/hero-header-background-pc@2x.jpg );
+        }
+      }
+    }
+  }
+
+  &__event-period {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+  }
+
+  &__event-date {
+    margin: 0 5px;
+
+    &.-start::after, &.-end::after {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: '';
+      display: inline-block;
+      height: 24px;
+      margin-left: 2px;
+      vertical-align: bottom;
+      width: 24px;
+    }
+
+    &.-start::after {
+      background-image: url( #{$IMG_PATH}svg/saturday.svg );
+    }
+
+    &.-end::after {
+      background-image: url( #{$IMG_PATH}svg/sunday.svg );
+    }
+  }
+
+  &__site-title {
+    @include text-styles(logo);
+    font-size: 6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__site-desc {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+  }
+
+  &__prompt-to-scroll {
+    @include text-styles(small);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::after {
+      animation: expansion 2.5s ease-in-out 0s infinite normal;
+      background: white;
+      content: '';
+      display: block;
+      height: 50px;
+      margin: 10px auto 0;
+      width: 1px;
+
+      @keyframes expansion {
+        0% {
+          transform-origin: top;
+          transform: scaleY(0);
+        }
+        44% {
+          transform-origin: top;
+          transform: scaleY(1);
+        }
+        45% { transform-origin: bottom; }
+        90% {
+          transform-origin: bottom;
+          transform: scaleY(0);
+        }
+        100% {
+          transform-origin: bottom;
+          transform: scaleY(0);
+        }
+      }
+    }
+  }
+}

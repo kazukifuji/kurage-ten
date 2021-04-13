@@ -17,13 +17,14 @@
 
   @else if $type == 'small' {
     font-family: $DEF_FONTS;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.45;
     letter-spacing: 0.5em;
   }
 
   @else if $type == 'logo' {
     font-family: $LOGO_FONTS;
+    font-weight: lighter;
     line-height: 1.45;
   }
 }
