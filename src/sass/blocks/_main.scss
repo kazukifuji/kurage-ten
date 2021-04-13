@@ -1,0 +1,7 @@
+.main {
+  padding: 100px 0;
+  
+  & > *:not(:last-child) {
+    margin-bottom: 100px;
+  }
+}
