@@ -1,0 +1,9 @@
+.footer {
+  @include wrapper(margin);
+  text-align: center;
+
+  &__copyright {
+    @include text-styles(small);
+    margin: 50px 0;
+  }
+}
