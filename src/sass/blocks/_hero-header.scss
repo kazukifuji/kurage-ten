@@ -1,10 +1,10 @@
 .hero-header {
   height: 100vh;
+  position: relative;
   width: 100%;
   z-index: 0;
 
   &__bg {
-    position: absolute;
     height: 100%;
     width: 100%;
     z-index: -1;
