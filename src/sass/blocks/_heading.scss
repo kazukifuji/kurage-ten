@@ -1,0 +1,7 @@
+.heading {
+  @include text-styles(logo);
+  @include wrapper(margin);
+  font-size: 4rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
