@@ -21,3 +21,14 @@ mixin jellyfish-list-slider(jellyfishes)
             p.jellyfish-list__slider-item-desc #{jellyfish.desc}
 
   .swiper-pagination
+
+
+  //- イベント詳細のテーブル
+  mixin about-table(tableData) 
+    table.about__table
+      tbody.about__table-tbody 
+
+        each data in tableData 
+          tr.about__table-tr 
+            td.about__table-td-attr !{data.attr}
+            td.about__table-td-value !{data.value}
