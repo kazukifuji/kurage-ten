@@ -1,0 +1,57 @@
+.jellyfish-list {
+
+  .swiper-slide {
+    height: auto;
+    width: 250px;
+
+    @include mq( $TC_BREAKPOINT ) {
+      width: 280px;
+    }
+
+    @include mq( $PC_BREAKPOINT ) {
+      width: 300px;
+    }
+  }
+
+  &__slider-item {
+    border: 1px solid $LIGHT_BLUE;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20px;
+  
+    &-img {
+      display: block;
+      max-width: 100%;
+    }
+  
+    &-title {
+      @include text-styles(logo);
+      font-size: 2.4rem;
+      margin: 20px 0;
+      text-align: center;
+    }
+  
+    &-desc {
+      word-break: normal;
+    }
+  }
+
+  .swiper-pagination {
+    margin-top: 30px;
+    width: 100%;
+
+    &-bullet {
+      background-color: transparent;
+      border: 2px solid white;
+      height: 15px;
+      margin: 0 7.5px;
+      outline: none;
+      width: 15px;
+
+      &-active {
+        background-color: white;
+      }
+    }
+  }
+}
