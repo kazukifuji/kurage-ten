@@ -1,0 +1,109 @@
+.feature {
+  @include wrapper(margin);
+
+  &__wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 765px;
+  }
+
+  &__img-container-1 {
+    padding-top: 470px;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+
+    @include mq( 370px ) {
+      padding-top: 490px;
+    }
+
+    @include mq( $PC_BREAKPOINT ) {
+    padding-top: 630px;
+    }
+  }
+
+  &__img-1 {
+    position: absolute;
+    top: 0;
+    right: 5vw;
+  }
+
+  &__decoration-1 {
+    background-image: url( #{$IMG_PATH}svg/fluid-shape-1.svg );
+    height: 42.247px;
+    position: absolute;
+    top: 135px;
+    left: 0;
+    width: 51.85px;
+
+    @include mq( 400px ) {
+      left: 10vw;
+    }
+
+    @include mq( $PC_BREAKPOINT ) {
+      left: 15vw;
+    }
+  }
+
+  &__img-2 {
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+
+    @include mq( $PC_BREAKPOINT ) {
+      top: 225px;
+    }
+  }
+
+  &__decoration-2 {
+    background-image: url( #{$IMG_PATH}svg/fluid-shape-2.svg );
+    height: 76.26px;
+    position: absolute;
+    bottom: 0;
+    right: 5vw;
+    width: 82.773px;
+
+    @include mq( $TC_BREAKPOINT ) {
+      right: 10vw;
+    }
+  }
+
+  &__text-container {
+    margin: 50px 0;
+
+    & > *:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img-3 {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+  }
+
+  &__img-container-2 {
+    display: inline-block;
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include mq( $PC_BREAKPOINT ) {
+      margin-top: 60px;
+    }
+  }
+
+  &__decoration-3 {
+    background-image: url( #{$IMG_PATH}svg/fluid-shape-3.svg );
+    height: 53.777px;
+    float: right;
+    width: 58.536px;
+  }
+
+  &__img-4 {
+    margin-top: 20px;
+  }
+}
