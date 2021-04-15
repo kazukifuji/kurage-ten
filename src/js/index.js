@@ -12,12 +12,9 @@ import smoothScroller from './modules/smoothScroller';
 import loadingScreenController from './modules/loadingScreenController';
 
 
-window.addEventListener( 'DOMContentLoaded', () => {
+window.addEventListener( 'load', () => {
   resizeToFullScreen('#hero-header');
   resizeToFullScreen('#shape-mask > svg');
-}, { once: true, passive: true } );
-
-window.addEventListener( 'load', () => {
   heroHeaderMorphingAnime.play();
   slider.create('#jellyfish-list .swiper-container');
   smoothScroller('#footer .footer__move-to-top-button', 0);
