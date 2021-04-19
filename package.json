@@ -11,6 +11,7 @@
     "babel-loader": "^8.2.2",
     "core-js": "^3.10.1",
     "css-loader": "^5.2.1",
+    "es6-promise": "^4.2.8",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "import-glob-loader": "^1.1.0",
