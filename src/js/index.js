@@ -1,6 +1,7 @@
 import 'ress';
 import 'objectFitPolyfill';
 import 'picturefill';
+import 'es6-promise/auto';
 
 import 'src/sass/index.scss';
 
