@@ -1,0 +1,34 @@
+//- クラゲ一覧のスライダー
+mixin jellyfish-list-slider(jellyfishes)
+  -var count = 0;
+
+  .swiper-container 
+    .swiper-wrapper 
+    
+      each jellyfish in jellyfishes
+        - count++
+        .swiper-slide 
+          .jellyfish-list__slider-item
+            img.jellyfish-list__slider-item-img(
+              src=jellyfish.imgSrc
+              srcset=jellyfish.imgSrcset
+              width="234.92"
+              height="184.92"
+            )
+
+            h3.jellyfish-list__slider-item-title #{jellyfish.name}
+
+            p.jellyfish-list__slider-item-desc #{jellyfish.desc}
+
+  .swiper-pagination
+
+
+  //- イベント詳細のテーブル
+  mixin about-table(tableData) 
+    table.about__table
+      tbody.about__table-tbody 
+
+        each data in tableData 
+          tr.about__table-tr 
+            td.about__table-td-attr !{data.attr}
+            td.about__table-td-value !{data.value}

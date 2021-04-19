@@ -1,0 +1,17 @@
+html {
+  color: white;
+  font-size: 62.5%;
+
+  @include mq( $TC_BREAKPOINT ) { font-size: 67%; }
+  @include mq( $PC_BREAKPOINT ) { font-size: 70%; }
+}
+
+body {
+  background: $DEEP_BLUE;
+  @include text-styles();
+  line-break: strict;
+  overflow-wrap: break-word;
+  user-select: none;
+  word-break: keep-all;
+  word-wrap: break-word;
+}

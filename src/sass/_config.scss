@@ -1,0 +1,28 @@
+//パス
+$ROOT_PATH: '/';
+$IMG_PATH: $ROOT_PATH + 'assets/images/';
+$FONT_PATH: $ROOT_PATH + 'assets/fonts/';
+
+//色
+$LIGHT_BLUE: #b3d7f5;
+$DEEP_BLUE: #000055;
+
+//フォント
+@font-face {
+  font-family: PottaOne;
+  src: url( $FONT_PATH + 'PottaOne-Regular.woff2' ) format('woff2'),
+       url( $FONT_PATH + 'PottaOne-Regular.woff' ) format('woff');
+}
+
+@font-face {
+  font-family: KiwiMaru;
+  src: url( $FONT_PATH + 'KiwiMaru-Regular.woff2' ) format('woff2'),
+       url( $FONT_PATH + 'KiwiMaru-Regular.woff' ) format('woff');
+}
+
+$DEF_FONTS: KiwiMaru, sans-serif;
+$LOGO_FONTS: PottaOne, KiwiMaru, sans-serif;
+
+//ブレイクポイント
+$TC_BREAKPOINT: 600px;
+$PC_BREAKPOINT: 1025px;

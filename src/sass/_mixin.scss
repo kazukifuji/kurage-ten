@@ -1,0 +1,44 @@
+//引数の値に応じたメディアクエリを返す
+@mixin mq( $breakpoint: $TC_BREAKPOINT, $type: min ) {
+  @media screen and ( #{$type}-width: #{$breakpoint} ) {
+    @content;
+  }
+}
+
+
+//テキストの種類ごとのスタイルを返す
+@mixin text-styles( $type: 'default' ) {
+  @if $type == 'default' {
+    font-family: $DEF_FONTS;
+    font-size: 1.6rem;
+    line-height: 1.45;
+    letter-spacing: 0.2em;
+  }
+
+  @else if $type == 'small' {
+    font-family: $DEF_FONTS;
+    font-size: 1.2rem;
+    line-height: 1.45;
+    letter-spacing: 0.5em;
+  }
+
+  @else if $type == 'logo' {
+    font-family: $LOGO_FONTS;
+    font-weight: lighter;
+    line-height: 1.45;
+  }
+}
+
+
+//「wrapper」ブロックのスタイル
+@mixin wrapper( $type: 'padding' ) {
+  @if $type == 'padding' {
+    padding-right: 9.5vw;
+    padding-left: 9.5vw;
+  }
+  
+  @else if $type == 'margin' {
+    margin-right: 9.5vw;
+    margin-left: 9.5vw;
+  }
+}

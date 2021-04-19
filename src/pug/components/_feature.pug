@@ -1,0 +1,89 @@
+section#feature.feature 
+  .feature__wrapper 
+    .feature__img-container-1
+      picture 
+        source(
+          media=`(min-width: ${PC_BREAKPOINT})`,
+          srcset=`
+            ${IMG_PATH}png/feature-1-pc@2x.png 2x,
+            ${IMG_PATH}png/feature-1-pc.png 1x`
+        )
+        source(
+          media=`(min-width: ${TC_BREAKPOINT})`,
+          srcset=`
+            ${IMG_PATH}png/feature-1-tc@2x.png 2x,
+            ${IMG_PATH}png/feature-1-tc.png 1x`
+        )
+        img.feature__img-1(
+          src=`${IMG_PATH}png/feature-1.png`,
+          alt="沢山の小さな〇〇〇クラゲがフワフワと泳いでいる様子。",
+          srcset=`${IMG_PATH}png/feature-1@2x.png 2x`
+        )
+
+      .feature__decoration-1
+
+      picture 
+        source(
+          media=`(min-width: ${PC_BREAKPOINT})`,
+          srcset=`
+            ${IMG_PATH}png/feature-2-pc@2x.png 2x,
+            ${IMG_PATH}png/feature-2-pc.png 1x`
+        )
+        source(
+          media=`(min-width: ${TC_BREAKPOINT})`,
+          srcset=`
+            ${IMG_PATH}png/feature-2-tc@2x.png 2x,
+            ${IMG_PATH}png/feature-2-tc.png 1x`
+        )
+        img.feature__img-2(
+          src=`${IMG_PATH}png/feature-2.png`,
+          alt="青のライトに照らされ、幻想的な姿で漂う〇〇クラゲ。",
+          srcset=`${IMG_PATH}png/feature-2@2x.png 2x`
+        )
+        
+      .feature__decoration-2
+
+    .feature__text-container
+      p 約２０種類の個性豊かなクラゲたちが漂う姿はまるでプラネタリウムのよう。
+      p あなたもその姿に癒されてみませんか？
+
+    picture 
+      source(
+        media=`(min-width: ${PC_BREAKPOINT})`,
+        srcset=`
+          ${IMG_PATH}png/feature-3-pc@2x.png 2x,
+          ${IMG_PATH}png/feature-3-pc.png 1x`
+      )
+      source(
+        media=`(min-width: ${TC_BREAKPOINT})`,
+        srcset=`
+          ${IMG_PATH}png/feature-3-tc@2x.png 2x,
+          ${IMG_PATH}png/feature-3-tc.png 1x`
+      )
+      img.feature__img-3(
+        src=`${IMG_PATH}png/feature-3.png`,
+        alt="淡いピンクのネオンに照らされた広く綺麗な部屋に、様々なクラゲたちの水槽が並ぶイベント施設の様子。",
+        srcset=`${IMG_PATH}png/feature-3@2x.png 2x`
+      )
+
+    .feature__img-container-2
+      .feature__decoration-3
+
+      picture 
+        source(
+          media=`(min-width: ${PC_BREAKPOINT})`,
+          srcset=`
+            ${IMG_PATH}png/feature-4-pc@2x.png 2x,
+            ${IMG_PATH}png/feature-4-pc.png 1x`
+        )
+        source(
+          media=`(min-width: ${TC_BREAKPOINT})`,
+          srcset=`
+            ${IMG_PATH}png/feature-4-tc@2x.png 2x,
+            ${IMG_PATH}png/feature-4-tc.png 1x`
+        )
+        img.feature__img-4(
+          src=`${IMG_PATH}png/feature-4.png`,
+          alt="丸みのあるかわいらしい見た目の〇〇〇クラゲがフワフワ泳いでいる姿は、ずっと見ていられます。",
+          srcset=`${IMG_PATH}png/feature-4@2x.png 2x`
+        )

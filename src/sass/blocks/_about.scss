@@ -1,0 +1,78 @@
+.about {
+  @include wrapper(margin);
+
+  &__img-container-1 {
+    height: 57.4px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 84px;
+  }
+
+  &__decoration-1 {
+    background-image: url( #{$IMG_PATH}svg/fluid-shape-4.svg );
+    height: 48.454px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 47.987px;
+  }
+
+  &__decoration-2 {
+    background-image: url( #{$IMG_PATH}svg/fluid-shape-5.svg );
+    height: 24.991px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 26.943px;
+  }
+  
+  &__table {
+    border-collapse: separate;
+    border-spacing: 1em 30px;
+    margin: -30px auto;
+    max-width: 350px;
+
+    &-tr:not(:last-child) &-td-attr,
+    &-tr:not(:last-child) &-td-value {
+      margin-bottom: 30px;
+    }
+
+    &-td-attr {
+      text-align: right;
+    }
+
+    &-td-value {
+      margin-left: 1em;
+      word-break: normal;
+    }
+  }
+
+  &__img-container-2 {
+    height: 102.12px;
+    margin-top: 30px;
+    position: relative;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 159px;
+  }
+
+  &__decoration-3 {
+    background-image: url( #{$IMG_PATH}svg/fluid-shape-6.svg );
+    height: 85.698px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102.445px;
+  }
+
+  &__decoration-4 {
+    background-image: url( #{$IMG_PATH}svg/fluid-shape-7.svg );
+    height: 32.841px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 36.577px;
+  }
+}
