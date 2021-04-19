@@ -6,6 +6,7 @@ import 'src/sass/index.scss';
 
 import './config';
 import heroHeaderMorphingAnime from './modules/heroHeaderMorphingAnime';
+import openingAnime from './modules/openingAnime';
 import resizeToFullScreen from './modules/resizeToFullScreen';
 import slider from './modules/slider';
 import smoothScroller from './modules/smoothScroller';
@@ -24,5 +25,6 @@ window.addEventListener( 'load', () => {
     loadingScreen.querySelectorAll('.loading-screen__loading-chara')
     .forEach(loadingChara => loadingChara.style.animation = 'none');
     loadingScreen.style.display = 'none';
+    openingAnime.play();
   });
 }, { once: true, passive: true } );
